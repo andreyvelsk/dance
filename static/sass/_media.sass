@@ -1,0 +1,59 @@
+@media (min-width: 1200px)
+	body
+		.container
+			max-width: 1200px
+		
+@media (max-width: 1024px)
+	body
+		.header
+			font-size: 1.6rem
+			.callback
+				font-size: 2rem
+
+@media (max-width: 768px)
+
+	body
+		.header
+			&_text
+				display: none
+
+			.callback
+				flex-wrap: wrap
+				justify-content: center
+		.content
+			&_title
+				text-align: center
+			&_subtitle
+				text-align: center
+				padding-bottom: 3rem
+
+		.form
+			margin: 0
+			width: 100%
+
+
+
+@media (max-width: 525px)
+
+	body
+		.header
+			.logo
+				img
+					width: 100%
+
+			.callback
+
+				&_phone
+					font-size: 1.5rem
+				&_btn
+					font-size: 1.5rem
+		
+		.form
+			&_title
+				font-size: 2.4rem
+
+		.advantages
+			.advantage
+				border-left: none
+				border-bottom:  5px solid #c9b8c2
+				padding: 2rem 0

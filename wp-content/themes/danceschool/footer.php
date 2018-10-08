@@ -1,25 +1,28 @@
 <div class="footer">
 			<div class="contacts">
-				<span class="contacts_email">
-					<?php 
-							$email = the_field('email');
-							echo $email; 
-					?>
-				</span>
-				<span class="contacts_web">
-					<?php 
-							$site = the_field('site');
-							echo $site; 
-					?>
-						
-				</span>
+				<?php $email = get_option('admin_email'); ?>
+				<a href="mailto:<?php echo $email; ?>"><span class="contacts_email">
+						<?php 
+								echo $email; 
+						?>
+					</span>
+				</a>
+
+				<a href="/"><span class="contacts_web">
+						<?php 
+								echo the_field('site');
+						?>
+							
+					</span></a>
 			</div>
 
 			<div class="developer">
 
-				<span class="developer_name">
-					Сайт разработан: 
-				</span>
+				<a href="http://alfa-mg.com" target="_blank">
+					<span class="developer_name">
+						Сайт разработан: 
+					</span>
+				</a>
 				
 			</div>
 </div>

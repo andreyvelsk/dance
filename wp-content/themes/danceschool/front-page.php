@@ -3,21 +3,20 @@
 
 <div class="content">
 			<div class="row no-gutters">
-				<div class="col-lg-7">
+				<div class="col-lg-7 custom-col-lg-7">
 					<div class="content_title">
 						
 						<?php echo get_post_field('post_content', $post->ID); ?>
 					</div>
 					<div class="content_subtitle">
 						<?php 
-							$subtitle = the_field('subtitle');
-							echo $subtitle; 
+							echo the_field('subtitle');
 						?>
 					</div>
 				</div>
 				<!-- /.col-md-7 -->
 
-				<div class="col-lg-5">
+				<div class="col-lg-5 custom-col-lg-5">
 					<div class="form">
 						<span class="form_title">Записаться на занятие</span>
 						<?php 
@@ -33,13 +32,16 @@
 		<div class="advantages">
 			<div class="row">
 				<div class="col-md-4">
-					<div class="advantage">
+					<div class="advantage advantage-first">
 						<div class="advantage_title">
-							Опыт работы<br> 
-							более 15 лет
+							<?php 
+								echo the_field('advantagetitle1');
+							?>
 						</div>
 						<div class="advantage_text">
-							Профессиональный хореограф, мастер арабского танца с опытом более 15 лет, выступал на международных конкурсах, был членом жюри. Более 10 000 успешных учеников.
+							<?php 
+								echo the_field('advantagetext1');
+							?>
 						</div>
 					</div>
 				</div>
@@ -47,10 +49,14 @@
 				<div class="col-md-4">
 					<div class="advantage">
 						<div class="advantage_title">
-							Полезно для женского здоровья
+							<?php 
+								echo the_field('advantagetitle2');
+							?>
 						</div>
 						<div class="advantage_text">
-							Восточный танец не только красив, но и полезен для здоровья вашего ребёнка за счет множества специфических движений
+							<?php 
+								echo the_field('advantagetext2');
+							?>
 						</div>
 					</div>
 				</div>
@@ -58,11 +64,14 @@
 				<div class="col-md-4">
 					<div class="advantage">
 						<div class="advantage_title">
-							Танцевать <br>
-							может каждая
+							<?php 
+								echo the_field('advantagetitle3');
+							?>
 						</div>
 						<div class="advantage_text">
-							Ваш ребёнок может не иметь специальной подготовки, танцевать восточный танец сможет каждая девочка вне зависимости от возраста и уровня подготовки.
+							<?php 
+								echo the_field('advantagetext3');
+							?>
 						</div>
 					</div>
 					
